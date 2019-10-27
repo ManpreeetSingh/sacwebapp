@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body style="margin: 0;font-family: 'Montserrat', sans-serif;">
+
+
+
+
+
+
+	<section id="hidden1" class="hidden">
+		<p class="headpop">Log in<i class="fas fa-times fa cross" onclick="c1()"></i></p>
+		<form action="/first.html" method="post">
+			<input class="user-cred" type="text"  name="usernamelog" placeholder="Username">
+			<br>
+			<input class="user-cred" type="password" name="passwordlog" placeholder="Password">
+			<br>
+			<br>
+			<div class="log-btn">
+				<input type="submit" name="submit" class="btnpop">
+			</div> 
+		</form>
+		<p>Don't have account? <button class="signup-butn" onclick="ch2()">Signup here</button></p>
+	</section>
+
+
+
+
+	<section id="hidden2" class="hidden">
+		<p class="headpop">Sign up<i class="fas fa-times fa cross" onclick="c2()"></i></p>
+		<form action="/first.html" method="post">
+			<input class="user-cred" type="text" name="namesign" placeholder="First & Last name">
+			<br>
+			<input class="user-cred" type="text" name="usernamesign" placeholder="Username">
+			<br>
+			<input class="user-cred" type="password" name="passwordsign" placeholder="Password">
+			<br>
+			<input class="user-cred" type="password" name="passwordsign" placeholder="Confirm password">
+			<br>
+			<br>
+			<div class="log-btn">
+				<input type="submit" name="Sign up" class="btnpop">
+			</div>
+		</form>
+	</section>
+
+
+
+
+
+
+	<div class="border-radius1 tohide"></div>
+	<div class="sidebar1 tohide">
+		<div class="heading1">
+			<p><b>SAC NIT PATNA</b></p>
+		</div>
+		<div class="active1 links1">
+			<a href="#"><img src="images/nitplogo.png"> HOME</a>
+		</div>
+		<div class="links1" style="border-bottom-right-radius: 100px;">
+			<a href="#">SAS COUNCIL 2019</a>
+		</div>
+		<div class="links1">
+			<a href="#">NIT PATNA CLUBS</a>
+		</div>
+		<div class="links1">
+			<a href="#">ABOUT SAC</a>
+		</div>
+		<div class="links1">
+			<a href="#">NIT MAP</a>
+		</div>
+		<div class="links1">
+			<a href="#">ABOUT TCF</a>
+		</div>
+		<div class="links1">
+			<a href="#">SIGN OUT</a>
+		</div>
+	</div>
+	<div class="searchbar1 tohide">
+			<div  class="search1">
+				<input type="text" name="search" placeholder="search">
+				<i class="fas fa-search"></i>
+			</div>
+			<div class="blog1">
+				<i class="fas fa-blog"></i>
+				<input type="text" name="search" placeholder="Write Blogs">
+			</div>
+		</div>
+	<div class="main1 tohide">
+		
+		<div class="dropdowns1">
+			<img src="images/filter_icon.png">
+			<input type="text" name="tags" placeholder="Tags (ex: #tcf, #intramural, #byteworld, etc..">
+			<div class="dropdown">
+			  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    TCF FEEDS
+			  </a>
+
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+			    <a class="dropdown-item" href="#">Option 1</a>
+			    <a class="dropdown-item" href="#">Option 2</a>
+			    <a class="dropdown-item" href="#">Option 3</a>
+			  </div>
+			</div>
+			<div class="dropdown">
+			  <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			    INTRAMURAL FEEDS
+			  </a>
+
+			  <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+			    <a class="dropdown-item" href="#">Option 1</a>
+			    <a class="dropdown-item" href="#">Option 2</a>
+			    <a class="dropdown-item" href="#">Option 3</a>
+			  </div>
+			</div>
+			<button class="sign-butn" onclick="ch1()">Sign In</button>
+		</div>
+		<table>
+			<tr>
+				<td style="width: 65%;">
+					<div class="content1">
+			<div class="content11">
+				<img src="images/scenerysac.jpg">
+				<h3>A Loving Nature Is A Truest Wisdom</h3>
+				<br>
+				<h6>14th October 2019</h6>
+				<h6>Rakesh Kumar</h6>
+				<h6>#nature</h6>
+				<p>Take a moment to close your eyes and consider the sights,sounds and smells that you imagine when you think about being in nature. Perhaps you see a tiny trail meander through a dense forest or smell blossoming wild flowers as you summit a mountain peak.</p>
+				<a href="#">Read more >></a>
+			</div>
+			<div class="content21">
+				<img src="images/downloadand.png">
+				<h3>Build A Simple Blog App With Firebase In Android Studio</h3>
+				<br>
+				<h6>14th October 2019</h6>
+				<h6>Rakesh Kumar</h6>
+				<h6>#nature</h6>
+				<p>Firebase is a Backend-as-a-Service that started as a YC11 startup and grew up into a next generation app development platform on Google Cloud Platform.</p>
+				<a href="#">Read more >></a>
+			</div>
+			<div class="content31">
+				<img src="images/w.png">
+				<h3>The Absolute Beginner's Guide To Webflow</h3>
+				<br>
+				<h6>14th October 2019</h6>
+				<h6>Rakesh Kumar</h6>
+				<h6>#nature</h6>
+				<p>n short WebFlow is a web design tool,CMS and hosting platform. Each aspect of the platform is represented by a particular product/feature set........</p>
+				<a href="#">Read more >></a>
+			</div>
+		</div>
+				</td>
+				<td style="width: 25%">
+						<div class="notice1">
+							<div class="notice1-head">
+								<h5>SAC NOTICE BOARD</h5>
+							</div>
+							<div class="notice11">
+								<h6>Rakesh Kumar</h6>
+								<hr>
+								<p>#tcf2k20<br>TCF 2k20 schedule is announced...<br>
+								<a href="">read more >></a></p>
+							</div>
+							<div class="notice21">
+								<h6>Atul Kumar</h6>
+								<hr>
+								<p>#tcf2k20<br>Sac app new version is uploaded...<br>
+								<a href="">read more >></a></p>
+
+							</div>
+							<div class="notice31">
+								<h6>Aman Raj Sunderam</h6>
+								<hr>
+								<p>#tcf2k20<br>Interview for the member of web is scheduled...<br>
+								<a href="">read more >></a></p>
+
+							</div>
+						</div>
+						<div class="like-follow1">
+							<h5>Like and Follow Us</h5>
+							<hr>
+							<a href=""><i class="fab fa-3x fa-facebook-square"></i></a>
+							<a href=""><i class="fab fa-3x fa-twitter-square"></i></a>
+							<a href=""><i class="fab fa-3x fa-instagram"></i></a>
+						</div>
+				</td>
+			</tr>
+		</table>
+		
+		
+	</div>
+	
+	<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+  <script src="index.js"></script>
+</body>
+</html>
